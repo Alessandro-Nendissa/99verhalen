@@ -1,0 +1,283 @@
+body {
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    grid-gap: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: aliceblue;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-top: 4em;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: gray;
+    font-weight: 400;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #07193C;
+    box-shadow: 0px 0px 10px grey;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+header img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    max-width: 7em;
+}
+
+header section form select {
+    width: 100%;
+}
+
+header input {
+    min-width: 10em;
+    height: 2em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 0.1em;
+    border-style: solid;
+    border-color: lightblue;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+header input:focus {
+    background-color: aliceblue;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-gap: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 6em;
+    padding-left: 0;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav li {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activeLi {
+    border-bottom: 0.2em solid lightblue;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.activeA {
+    color: gray;
+
+}
+
+h1 {
+    font-size: 3em;
+    color: coral;
+    font-weight: bold;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 20em;
+    min-width: 10em;
+    box-shadow: 0px 0px 10px lightgrey;
+    border-radius: 1em;
+    background-color: white;
+    min-height: 15em;
+    text-align: left;
+}
+
+article img {
+    width: 100%;
+    border-radius: 1em 1em 0px 0px;
+}
+
+article h3 {
+    
+    font-family: Pembroke, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 1em;
+    
+}
+
+article p {
+    padding-bottom: 3em;
+    max-width: 20em;
+    padding-left: 2em;
+    text-align: left;
+}
+
+article footer {
+    margin-top: auto;
+    
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    color: lightblue;
+    bottom: 0;
+
+    
+}
+
+/*
+
+article button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 1em 5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 1em;
+    box-shadow: 0px 3px 5px lightgrey;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+article button:hover {
+    box-shadow: 0px 3px 5px lightgrey;
+    color: blue;
+}
+
+article button:active {
+    box-shadow: none;
+    color: blue;
+}
+
+article button:focus {
+    border-color: none;
+}
+
+*/
+
+
+ section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+select {
+    
+    min-width: 10em;
+    background-color: white;
+    height: 3em;
+    color: lightblue;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border-color: lightblue;
+}
+
+@media screen and (min-width: 35em) {
+  header section {
+    width: 31em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 33em;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+}
+
+@media screen and (min-width: 55em) {
+  header section {
+    width: 43em;
+
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 45em;
+}
+  
+}
+
+----
+/* TEST */
+----
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+  }
+
+----
+/* TEST */
+----
