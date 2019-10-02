@@ -16,12 +16,19 @@ header section {
     margin-right: 0;
 }
     
-h2 {  
+h1 {  
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
     font-size: 1em;
     font-weight: 500;
+    
+}
+
+p {  
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
     
 }
 
@@ -80,6 +87,7 @@ header div button {
 header div button:active {
     border-top: 0.5em solid gold;
 }
+
 
 
 div + a img {
@@ -157,13 +165,6 @@ li[target] a{
 }
 
 
-h1 {
-    font-size: 3em;
-    color: coral;
-    font-weight: bold;
-    margin-top: 3em;
-    margin-bottom: 1em;
-}
 
 section a {
     text-decoration: none;
@@ -187,7 +188,7 @@ article:hover {
     box-shadow: 0em 0em 0.7em grey;
 }
 
-h2 + article {
+h1 + article {
     grid-template-columns: 1fr 1fr;
      
     grid-column-start: 1;
@@ -211,7 +212,7 @@ article img:first-of-type {
 
 section > h3{
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
 }
 
 article h3 {
@@ -222,10 +223,11 @@ article h3 {
     font-size: 1em;
     text-align: left;
     padding-left: 1em;
+    color: #07193C;
     
 }
 
-article h3:first-of-type {
+/* article h3:first-of-type {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -233,7 +235,7 @@ article h3:first-of-type {
     grid-column-start: 1;
     grid-column-end: 3;
     
-}
+} */
 
 
 article footer {
@@ -243,9 +245,11 @@ article footer {
     margin-bottom: 0.5em;
     color: lightblue;
     bottom: 0;
-
-    
 }
+
+/* article footer:last-of-type {
+    justify-content: flex-start;
+} */
 
  section {
     display: grid;
@@ -297,7 +301,7 @@ legend {
     margin-left: auto;
     margin-right: auto;
 }
-    h2 {  
+    h1 {  
     grid-column-start: 1;
     grid-column-end: 4;
     
@@ -309,6 +313,10 @@ legend {
 
     header div button {
     visibility: hidden;
+}
+    section > h3{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
     
 
@@ -326,10 +334,15 @@ legend {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 45em;
 }
-    h2 {  
+    h1 {  
     grid-column-start: 1;
     grid-column-end: 5;
     
+}
+    
+    section > h3{
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
   
 }
@@ -374,4 +387,7 @@ legend {
 body img {
     width: 100%;
 }
+
+
+
 
